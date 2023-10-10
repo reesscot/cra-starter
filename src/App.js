@@ -31,6 +31,7 @@ function App({ signOut, user }) {
   return (
     <div>
       <h1>Hello {user.username}</h1>
+      <h1>Hello {user.signInUserSession.idToken.jwtToken}</h1>
       <button onClick={signOut}>Sign out</button>
       </div>
   );
